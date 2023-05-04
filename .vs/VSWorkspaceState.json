@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\routes",
+    "\\src\\routes\\favs",
+    "\\src\\routes\\posts"
+  ],
+  "SelectedNode": "\\src\\routes\\posts\\+page.server.js",
+  "PreviewInSolutionExplorer": false
+}

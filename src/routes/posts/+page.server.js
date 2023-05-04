@@ -1,10 +1,10 @@
-import { posts } from './data.js';
+// import { posts } from './data.js';
 
-export function load() {
+export async function load() {
+  const res = await fetch("http://www.colourlovers.com/api/colors")
+  const json = await res.json()
+  console.log(json)
   return {
-    summaries: posts.map((post) => ({
-      slug: post.slug,
-      title: post.title
-    }))
+    posts: json.results
   };
 }

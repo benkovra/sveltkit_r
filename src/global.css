@@ -1,20 +1,150 @@
-@import url('../node_modules/simpledotcss/simple.min.css');
+/* Typography */
+html {
+  font-size: 62.5%;
+}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --accent: seagreen;
-  }
-}
 body {
-  line-height: 1.7;
-  font-size: 1.4rem;
-  grid-template-columns: 1fr 4fr 1fr;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  background-color: #474747; /* Light Grey */
 }
-body > div {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  min-height: 100vh
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
 }
+
 h1 {
-  color:seagreen;
+  font-size: 4.8rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+  margin-bottom: 1.2rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+/* Colors */
+:root {
+  --primary-color: #123246; /* Light Blue */
+  --secondary-color: #3498db; /* Dark Blue */
+}
+
+
+/* Layout */
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+
+nav a {
+  display: block;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-left: 2rem;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: var(--secondary-color);
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4rem;
+  margin-top: 4rem;
+}
+
+.card {
+  background-color: #474747;
+  padding: 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Forms */
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+input {
+  padding: 1rem;
+  border: none;
+  background-color: #73a36f;
+  margin-bottom: 2rem;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 1.5rem;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}
+.page-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 1000;
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.page-description {
+  position: absolute;
+  top: 6rem; /* adjust this value to your liking */
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 1000;
+  padding: 1rem;
+  background-color: #fff;
 }

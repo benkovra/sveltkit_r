@@ -4,12 +4,11 @@
 
 <nav>
   <a href="/">Home</a>
-  <a href="/posts">Posts</a>
-  <a href="/favs">Favs</a>
-  <a href="/resources">Resources</a>
-  <a href="/donate">Donate</a>
-  <a href="/about">About</a>
-</nav>
+  <a href="/posts">news</a>
+  <a href="/favs">launches</a>
+  <a href="/resources">reports</a>
+  <a href="/donate">blogs</a>
+ </nav>
 
 <main>
   <slot />

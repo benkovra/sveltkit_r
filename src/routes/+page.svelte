@@ -1,5 +1,4 @@
-<h1>Welcome to SvelteKit</h1>
+<h1>Welcome Rachels SvelteKit app!</h1>
 <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
 
-<h1>Title of Page change</h1>
-<p>Basic page description also change</p>
+<p>This app uses thecolorapi.com to generate colors and color pallets. use this to generate inspiration</p>

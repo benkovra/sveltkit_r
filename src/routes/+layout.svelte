@@ -4,10 +4,9 @@
 
 <nav>
   <a href="/">Home</a>
-  <a href="/posts">news</a>
-  <a href="/favs">launches</a>
-  <a href="/resources">reports</a>
-  <a href="/donate">blogs</a>
+  <a href="/posts">pallets</a>
+  <a href="/favs">favs</a>
+  
  </nav>
 
 <main>
